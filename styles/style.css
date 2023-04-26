@@ -1,0 +1,24 @@
+.divForm, label{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border-radius: 8px;
+    align-items: center;
+    margin: 5px;
+    background-color: antiquewhite;
+    margin-left: 10%;
+
+}
+
+button{
+    width: 20%;
+    margin-top: 10px;
+    border: 2px solid black;
+}
+
+
+label, input, select{
+
+width: 50%;
+
+}
