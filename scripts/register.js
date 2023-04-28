@@ -52,8 +52,11 @@ function register(){
 
     let newUser= new User(inputEmail, inputPassword, inputFirst,inputLast, inputAge, inputPhone, inputAddress, inputPayment, inputColor);
 
-     $('input').val("");
-    validation(newUser);
-    console.log(newUser);
+   
+   if (validation(newUser)==true) {
+       saveUser(newUser);
+       $('input').val("");
+      
+   } else {}
 }
 
