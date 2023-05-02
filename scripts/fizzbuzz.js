@@ -23,3 +23,5 @@ function fizzBuzz(n){
 }
 
 fizzBuzz(55);
+
+window.location="index.html";

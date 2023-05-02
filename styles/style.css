@@ -14,12 +14,54 @@
 
     width: 30%;
     margin-top: 8px;
-
+    margin-bottom: 6px;
 }
 
 
 label, input, select{
 
 width: 50%;
+
+}
+
+.indexLable, label, input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+margin-left:0;
+margin-top: 5px;
+padding: 3px;
+width: 50%;
+border-radius: 8px;
+}
+
+.indexDiv, div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-left: 25%;
+    background-color: rgb(58, 58, 58);
+    border-radius: 9px;
+    
+}
+
+.navbar{
+    display: flex;
+    color: black;
+ 
+
+}
+
+.container-fluid{
+    background-color: #fac20c;
+    display: flex;
+    flex-direction: row;
+margin-left: 25%;
+margin-right: 25%;
+font-size: larger;
+font-weight: bold;
+
+
 
 }

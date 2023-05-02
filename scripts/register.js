@@ -55,8 +55,42 @@ function register(){
    
    if (validation(newUser)==true) {
        saveUser(newUser);
+       $("#txtPassword").css({'background-color':'white'});
        $('input').val("");
       
    } else {}
 }
 
+
+function validatePass(){
+    let inputPass= $("#txtPassword");
+    let password= inputPass.val();
+
+    if(password.length <8){
+        inputPass.css({'background-color':'red'});
+    } else {
+        inputPass.css({'background-color':'green'});
+    }
+
+}
+
+
+function init(){
+    $('.divForm').hide();
+
+    $('#btnAddNew').click(function(){
+        $('.divForm').slideDown(1000)
+        })
+
+    $('#btnCloseForm').click(function(){
+        $('.divForm').slideUp(1000)
+        })
+
+        $("#txtPassword").keyup(validatePass);
+        
+}
+
+
+
+
+window.onload= init;
